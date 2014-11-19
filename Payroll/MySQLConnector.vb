@@ -24,7 +24,9 @@ Public Class MySQLConnector
     Protected Overridable Sub Dispose(disposing As Boolean)
         If Not Me.disposedValue Then
             If disposing Then
-                _conn.Close()
+                If _conn.State = ConnectionState.Open Then
+                    _conn.Close()
+                End If
                 _conn.Dispose()
                 _conn = Nothing
             End If
