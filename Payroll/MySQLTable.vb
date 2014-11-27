@@ -77,6 +77,10 @@ Public MustInherit Class MySQLTable
         _intRow = 0
     End Sub
 
+    Public Function GetTableObj() As DataTable
+        Return _table.Copy()
+    End Function
+
 #Region "IDisposable Support"
     Private disposedValue As Boolean ' To detect redundant calls
 

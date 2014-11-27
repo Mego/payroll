@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.vb" />
+    <Compile Include="Employment.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +116,7 @@
     </Compile>
     <Compile Include="MySQLConnector.vb" />
     <Compile Include="MySQLTable.vb" />
+    <Compile Include="TimeClock.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

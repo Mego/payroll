@@ -83,9 +83,13 @@
 
     Public Overrides Sub UpdateCurrentRow()
         Dim strSql As String =
-            "UPDATE SE_EMPLOYEE SET Ssn={0},Fname={1},Mname={2},Lname={3},Bdate={4},PhoneNum{5},Sex={6} WHERE Ssn={7}".FormatWith(
+            "UPDATE SE_EMPLOYEE SET Ssn='{0}',Fname='{1}',Mname='{2}',Lname='{3}',Bdate='{4}',PhoneNum='{5}',Sex='{6}' WHERE Ssn='{7}'".FormatWith(
                 Ssn, FirstName, MiddleName, LastName, BirthDateString, PhoneNumber, Sex, _ssnOriginal)
         ExecuteNonQuery(strSql)
+    End Sub
+
+    Public Sub GetEmployee(ByVal pSsn As String)
+        ExecuteQuery("SELECT * FROM SE_EMPLOYEE WHERE Ssn='{0}'".FormatWith(pSsn))
     End Sub
 
 End Class
