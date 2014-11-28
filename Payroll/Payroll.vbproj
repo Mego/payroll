@@ -90,12 +90,78 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.vb" />
+    <Compile Include="EmployeeUI\EmployeeCardSwipe.Designer.vb">
+      <DependentUpon>EmployeeCardSwipe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeCardSwipe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeClockInMainMenu.Designer.vb">
+      <DependentUpon>EmployeeClockInMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeClockInMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeClockInSuccess.Designer.vb">
+      <DependentUpon>EmployeeClockInSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeClockInSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeKeypadEntry.Designer.vb">
+      <DependentUpon>EmployeeKeypadEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeKeypadEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeMissedPunch.Designer.vb">
+      <DependentUpon>EmployeeMissedPunch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeUI\EmployeeMissedPunch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Employment.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerMonthlyOverview.Designer.vb">
+      <DependentUpon>ManagerMonthlyOverview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerMonthlyOverview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerPrintChecks.Designer.vb">
+      <DependentUpon>ManagerPrintChecks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerPrintChecks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerScheduler.Designer.vb">
+      <DependentUpon>ManagerScheduler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerScheduler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerMainMenu.Designer.vb">
+      <DependentUpon>ManagerMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerTaxInfoDetail.Designer.vb">
+      <DependentUpon>ManagerTaxInfoDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerTaxInfoDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerTaxInfoOverview.Designer.vb">
+      <DependentUpon>ManagerTaxInfoOverview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerTaxInfoOverview.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modExtensions.vb" />
@@ -119,6 +185,42 @@
     <Compile Include="TimeClock.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="EmployeeUI\EmployeeCardSwipe.resx">
+      <DependentUpon>EmployeeCardSwipe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeUI\EmployeeClockInMainMenu.resx">
+      <DependentUpon>EmployeeClockInMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeUI\EmployeeClockInSuccess.resx">
+      <DependentUpon>EmployeeClockInSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeUI\EmployeeKeypadEntry.resx">
+      <DependentUpon>EmployeeKeypadEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeUI\EmployeeMissedPunch.resx">
+      <DependentUpon>EmployeeMissedPunch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerMonthlyOverview.resx">
+      <DependentUpon>ManagerMonthlyOverview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerPrintChecks.resx">
+      <DependentUpon>ManagerPrintChecks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerScheduler.resx">
+      <DependentUpon>ManagerScheduler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerMainMenu.resx">
+      <DependentUpon>ManagerMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerTaxInfoDetail.resx">
+      <DependentUpon>ManagerTaxInfoDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerTaxInfoOverview.resx">
+      <DependentUpon>ManagerTaxInfoOverview.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
