@@ -22,7 +22,6 @@ Partial Class EmployeeClockInMainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EmployeeClockInMainMenu))
         Me.btn_ClockIn = New System.Windows.Forms.Button()
         Me.btn_ClockOut = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -64,14 +63,14 @@ Partial Class EmployeeClockInMainMenu
         'img_Ribbon
         '
         Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.img_Ribbon.Image = CType(resources.GetObject("img_Ribbon.Image"), System.Drawing.Image)
+        Me.img_Ribbon.Image = Global.Payroll.My.Resources.Resources.Ribbon_EmployeeClockIn
         Me.img_Ribbon.Location = New System.Drawing.Point(298, 73)
         Me.img_Ribbon.Name = "img_Ribbon"
         Me.img_Ribbon.Size = New System.Drawing.Size(361, 58)
         Me.img_Ribbon.TabIndex = 3
         Me.img_Ribbon.TabStop = False
         '
-        'EmployeeClockIn
+        'EmployeeClockInMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -80,7 +79,7 @@ Partial Class EmployeeClockInMainMenu
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.btn_ClockOut)
         Me.Controls.Add(Me.btn_ClockIn)
-        Me.Name = "EmployeeClockIn"
+        Me.Name = "EmployeeClockInMainMenu"
         Me.Text = "Pay Tread"
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

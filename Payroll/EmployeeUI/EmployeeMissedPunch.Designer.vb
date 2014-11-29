@@ -22,12 +22,11 @@ Partial Class EmployeeMissedPunch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EmployeeMissedPunch))
         Me.txt_Time = New System.Windows.Forms.TextBox()
-        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         Me.btn_SubmitClockOut = New System.Windows.Forms.Button()
         Me.txt_ClockOutMessage = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,16 +38,6 @@ Partial Class EmployeeMissedPunch
         Me.txt_Time.Size = New System.Drawing.Size(185, 20)
         Me.txt_Time.TabIndex = 18
         Me.txt_Time.Text = "Time..."
-        '
-        'img_Ribbon
-        '
-        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.img_Ribbon.Image = CType(resources.GetObject("img_Ribbon.Image"), System.Drawing.Image)
-        Me.img_Ribbon.Location = New System.Drawing.Point(289, 100)
-        Me.img_Ribbon.Name = "img_Ribbon"
-        Me.img_Ribbon.Size = New System.Drawing.Size(354, 52)
-        Me.img_Ribbon.TabIndex = 16
-        Me.img_Ribbon.TabStop = False
         '
         'btn_SubmitClockOut
         '
@@ -78,6 +67,16 @@ Partial Class EmployeeMissedPunch
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 20
+        '
+        'img_Ribbon
+        '
+        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.img_Ribbon.Image = Global.Payroll.My.Resources.Resources.Ribbon_MissedPunch
+        Me.img_Ribbon.Location = New System.Drawing.Point(289, 100)
+        Me.img_Ribbon.Name = "img_Ribbon"
+        Me.img_Ribbon.Size = New System.Drawing.Size(354, 52)
+        Me.img_Ribbon.TabIndex = 16
+        Me.img_Ribbon.TabStop = False
         '
         'EmployeeMissedPunch
         '
