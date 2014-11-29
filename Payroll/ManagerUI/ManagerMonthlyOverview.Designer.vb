@@ -92,6 +92,7 @@ Partial Class ManagerMonthlyOverview
         Me.Controls.Add(Me.btn_MainMenu)
         Me.Controls.Add(Me.tableView)
         Me.Name = "ManagerMonthlyOverview"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Pay Tread - Admin"
         Me.ResumeLayout(False)
         Me.PerformLayout()

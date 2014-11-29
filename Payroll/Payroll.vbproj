@@ -186,11 +186,26 @@
     <EmbeddedResource Include="EmployeeUI\EmployeeMissedPunch.resx">
       <DependentUpon>EmployeeMissedPunch.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InsertEmployee.resx">
+      <DependentUpon>InsertEmployee.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerUI\ManagerMainMenu.resx">
       <DependentUpon>ManagerMainMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerMonthlyOverview.resx">
+      <DependentUpon>ManagerMonthlyOverview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerPrintChecks.resx">
+      <DependentUpon>ManagerPrintChecks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerScheduler.resx">
+      <DependentUpon>ManagerScheduler.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerUI\ManagerTaxInfoDetail.resx">
       <DependentUpon>ManagerTaxInfoDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerTaxInfoOverview.resx">
+      <DependentUpon>ManagerTaxInfoOverview.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -93,6 +93,7 @@ Partial Class ManagerMainMenu
         Me.Controls.Add(Me.btn_MonthlyOverview)
         Me.Controls.Add(Me.btn_Scheduler)
         Me.Name = "ManagerMainMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Pay Tread - Admin"
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -35,8 +35,8 @@ Partial Class InsertEmployee
         Me.calBdate = New System.Windows.Forms.MonthCalendar()
         Me.txtPhoneNum = New System.Windows.Forms.MaskedTextBox()
         Me.grpSex = New System.Windows.Forms.GroupBox()
-        Me.radMale = New System.Windows.Forms.RadioButton()
         Me.radFemale = New System.Windows.Forms.RadioButton()
+        Me.radMale = New System.Windows.Forms.RadioButton()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.grpSex.SuspendLayout()
         Me.SuspendLayout()
@@ -153,6 +153,16 @@ Partial Class InsertEmployee
         Me.grpSex.TabStop = False
         Me.grpSex.Text = "Sex"
         '
+        'radFemale
+        '
+        Me.radFemale.AutoSize = True
+        Me.radFemale.Location = New System.Drawing.Point(82, 10)
+        Me.radFemale.Name = "radFemale"
+        Me.radFemale.Size = New System.Drawing.Size(59, 17)
+        Me.radFemale.TabIndex = 1
+        Me.radFemale.Text = "Female"
+        Me.radFemale.UseVisualStyleBackColor = True
+        '
         'radMale
         '
         Me.radMale.AutoSize = True
@@ -164,16 +174,6 @@ Partial Class InsertEmployee
         Me.radMale.TabStop = True
         Me.radMale.Text = "Male"
         Me.radMale.UseVisualStyleBackColor = True
-        '
-        'radFemale
-        '
-        Me.radFemale.AutoSize = True
-        Me.radFemale.Location = New System.Drawing.Point(82, 10)
-        Me.radFemale.Name = "radFemale"
-        Me.radFemale.Size = New System.Drawing.Size(59, 17)
-        Me.radFemale.TabIndex = 1
-        Me.radFemale.Text = "Female"
-        Me.radFemale.UseVisualStyleBackColor = True
         '
         'btnSubmit
         '
