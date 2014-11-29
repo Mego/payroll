@@ -56,15 +56,6 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("cs.sfasu.edu")>  _
-        Public ReadOnly Property DB_HOST() As String
-            Get
-                Return CType(Me("DB_HOST"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("cs425112")>  _
         Public ReadOnly Property DB_USER() As String
             Get
@@ -87,6 +78,15 @@ Namespace My
         Public ReadOnly Property DB_NAME() As String
             Get
                 Return CType(Me("DB_NAME"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("76.233.242.6")>  _
+        Public ReadOnly Property DB_HOST() As String
+            Get
+                Return CType(Me("DB_HOST"),String)
             End Get
         End Property
     End Class
