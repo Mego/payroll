@@ -117,6 +117,12 @@
       <DependentUpon>InsertEmployee.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ManagerUI\ManagerEmployeePicker.Designer.vb">
+      <DependentUpon>ManagerEmployeePicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerEmployeePicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ManagerUI\ManagerMonthlyOverview.Designer.vb">
       <DependentUpon>ManagerMonthlyOverview.vb</DependentUpon>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InsertEmployee.resx">
       <DependentUpon>InsertEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerEmployeePicker.resx">
+      <DependentUpon>ManagerEmployeePicker.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUI\ManagerMainMenu.resx">
       <DependentUpon>ManagerMainMenu.vb</DependentUpon>

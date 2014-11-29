@@ -3,6 +3,7 @@
     Private Sub btn_Scheduler_Click(sender As Object, e As EventArgs) Handles btn_Scheduler.Click
         Dim scheduler As ManagerScheduler
         scheduler = New ManagerScheduler
+        scheduler.initTable()
         showForm(CType(scheduler, Form))
     End Sub
 

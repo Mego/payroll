@@ -30,7 +30,6 @@ Partial Class ManagerScheduler
         Me.btn_Week = New System.Windows.Forms.Button()
         Me.btn_Month = New System.Windows.Forms.Button()
         Me.btn_Year = New System.Windows.Forms.Button()
-        Me.btn_TableTest = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'tableView
@@ -133,22 +132,11 @@ Partial Class ManagerScheduler
         Me.btn_Year.Text = "Year"
         Me.btn_Year.UseVisualStyleBackColor = True
         '
-        'btn_TableTest
-        '
-        Me.btn_TableTest.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_TableTest.Location = New System.Drawing.Point(123, 53)
-        Me.btn_TableTest.Name = "btn_TableTest"
-        Me.btn_TableTest.Size = New System.Drawing.Size(86, 34)
-        Me.btn_TableTest.TabIndex = 27
-        Me.btn_TableTest.Text = "Table Test"
-        Me.btn_TableTest.UseVisualStyleBackColor = True
-        '
         'ManagerScheduler
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(952, 619)
-        Me.Controls.Add(Me.btn_TableTest)
         Me.Controls.Add(Me.btn_Year)
         Me.Controls.Add(Me.btn_Month)
         Me.Controls.Add(Me.btn_Week)
@@ -172,5 +160,4 @@ Partial Class ManagerScheduler
     Friend WithEvents btn_Week As System.Windows.Forms.Button
     Friend WithEvents btn_Month As System.Windows.Forms.Button
     Friend WithEvents btn_Year As System.Windows.Forms.Button
-    Friend WithEvents btn_TableTest As System.Windows.Forms.Button
 End Class
