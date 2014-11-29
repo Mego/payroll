@@ -10,7 +10,7 @@ Public MustInherit Class MySQLTable
     Public Sub New()
         _conn = New MySQLConnector()
         _table = New DataTable()
-        _intRow = 0
+        _intRow = -1
     End Sub
 
     Public Overridable Sub ExecuteQuery(ByVal pQuery As String)
@@ -72,9 +72,18 @@ Public MustInherit Class MySQLTable
 
     Public MustOverride Sub UpdateCurrentRow()
 
+    Public MustOverride Function TableName() As String
+
+    Public Sub Insert(ByVal pVals As Dictionary(Of String, String))
+        Close()
+        Dim strSql As String = "INSERT INTO " & TableName() &
+            "({0}) VALUES ({1})".FormatWith(pVals.Keys.Join(","), pVals.Values.Join(","))
+        ExecuteNonQuery(strSql)
+    End Sub
+
     Public Sub Close()
         _table.Clear()
-        _intRow = 0
+        _intRow = -1
     End Sub
 
     Public Function GetTableObj() As DataTable

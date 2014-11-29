@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Net
 
 Public Class MySQLConnector
     Implements IDisposable
@@ -7,7 +8,7 @@ Public Class MySQLConnector
 
     Public Sub New()
         _conn = New MySqlConnection
-        _conn.ConnectionString = "server={0};user id={1};password={2};database={3}".FormatWith(My.Settings.DB_HOST, My.Settings.DB_USER, My.Settings.DB_PASS, My.Settings.DB_NAME)
+        _conn.ConnectionString = "Server={0};Uid={1};Pwd={2};Database={3};Port=33060".FormatWith(My.Settings.DB_HOST, My.Settings.DB_USER, My.Settings.DB_PASS, My.Settings.DB_NAME)
         _conn.Open()
     End Sub
 

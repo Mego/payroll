@@ -80,4 +80,8 @@
     Public Sub GetEmployment(ByVal pEssn As String, ByVal pHireDate As String)
         ExecuteQuery("SELECT * FROM SE_EMPLOYMENT WHERE Essn='{0}' AND HireDate='{1}'".FormatWith(pEssn, pHireDate))
     End Sub
+
+    Public Overrides Function TableName() As String
+        Return "SE_EMPLOYMENT"
+    End Function
 End Class

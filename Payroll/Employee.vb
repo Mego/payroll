@@ -92,4 +92,7 @@
         ExecuteQuery("SELECT * FROM SE_EMPLOYEE WHERE Ssn='{0}'".FormatWith(pSsn))
     End Sub
 
+    Public Overrides Function TableName() As String
+        Return "SE_EMPLOYEE"
+    End Function
 End Class

@@ -58,6 +58,10 @@
     Public Sub GetTimeClock(ByVal pEssn As String, ByVal pClockType As ClockType, ByVal pClockTime As String)
         ExecuteQuery("SELECT * FROM SE_TIMECLOCK SET Essn='{0}',ClockType={1},ClockTime='{2}'".FormatWith(pEssn, CInt(pClockType), pClockTime))
     End Sub
+
+    Public Overrides Function TableName() As String
+        Return "SE_TIMECLOCK"
+    End Function
 End Class
 
 Public Enum ClockType
