@@ -22,24 +22,13 @@ Partial Class ManagerMainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ManagerMainMenu))
-        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         Me.btn_PrintChecks = New System.Windows.Forms.Button()
         Me.btn_MonthlyOverview = New System.Windows.Forms.Button()
         Me.btn_Scheduler = New System.Windows.Forms.Button()
         Me.btn_TaxInformation = New System.Windows.Forms.Button()
+        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'img_Ribbon
-        '
-        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.img_Ribbon.Image = CType(resources.GetObject("img_Ribbon.Image"), System.Drawing.Image)
-        Me.img_Ribbon.Location = New System.Drawing.Point(289, 115)
-        Me.img_Ribbon.Name = "img_Ribbon"
-        Me.img_Ribbon.Size = New System.Drawing.Size(375, 55)
-        Me.img_Ribbon.TabIndex = 7
-        Me.img_Ribbon.TabStop = False
         '
         'btn_PrintChecks
         '
@@ -82,6 +71,16 @@ Partial Class ManagerMainMenu
         Me.btn_TaxInformation.TabIndex = 8
         Me.btn_TaxInformation.Text = "Tax Information"
         Me.btn_TaxInformation.UseVisualStyleBackColor = True
+        '
+        'img_Ribbon
+        '
+        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.img_Ribbon.Image = Global.Payroll.My.Resources.Resources.Ribbon_ManagerMainMenu
+        Me.img_Ribbon.Location = New System.Drawing.Point(289, 115)
+        Me.img_Ribbon.Name = "img_Ribbon"
+        Me.img_Ribbon.Size = New System.Drawing.Size(375, 55)
+        Me.img_Ribbon.TabIndex = 7
+        Me.img_Ribbon.TabStop = False
         '
         'ManagerMainMenu
         '

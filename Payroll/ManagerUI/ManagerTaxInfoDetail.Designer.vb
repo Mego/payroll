@@ -22,17 +22,10 @@ Partial Class ManagerTaxInfoDetail
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ManagerTaxInfoDetail))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.btn_PrintSummary = New System.Windows.Forms.Button()
         Me.btn_Back = New System.Windows.Forms.Button()
-        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.txt_EmployeeName = New System.Windows.Forms.Label()
         Me.txt_GrossPay = New System.Windows.Forms.Label()
         Me.txt_WithheldPay = New System.Windows.Forms.Label()
@@ -45,12 +38,18 @@ Partial Class ManagerTaxInfoDetail
         Me.txt_SocialSecurityTax = New System.Windows.Forms.Label()
         Me.txt_FedIncomeTax = New System.Windows.Forms.Label()
         Me.txt_StateIncomeTax = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -69,33 +68,6 @@ Partial Class ManagerTaxInfoDetail
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 31
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(667, 116)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(253, 387)
-        Me.PictureBox1.TabIndex = 33
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(350, 116)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(253, 387)
-        Me.PictureBox2.TabIndex = 34
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(33, 116)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(253, 387)
-        Me.PictureBox3.TabIndex = 35
-        Me.PictureBox3.TabStop = False
-        '
         'btn_PrintSummary
         '
         Me.btn_PrintSummary.Location = New System.Drawing.Point(832, 569)
@@ -113,36 +85,6 @@ Partial Class ManagerTaxInfoDetail
         Me.btn_Back.TabIndex = 37
         Me.btn_Back.Text = "Back"
         Me.btn_Back.UseVisualStyleBackColor = True
-        '
-        'img_Ribbon
-        '
-        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.img_Ribbon.Image = CType(resources.GetObject("img_Ribbon.Image"), System.Drawing.Image)
-        Me.img_Ribbon.Location = New System.Drawing.Point(29, 57)
-        Me.img_Ribbon.Name = "img_Ribbon"
-        Me.img_Ribbon.Size = New System.Drawing.Size(261, 53)
-        Me.img_Ribbon.TabIndex = 38
-        Me.img_Ribbon.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(345, 57)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(261, 53)
-        Me.PictureBox4.TabIndex = 39
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(662, 57)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(261, 53)
-        Me.PictureBox5.TabIndex = 40
-        Me.PictureBox5.TabStop = False
         '
         'txt_EmployeeName
         '
@@ -288,6 +230,63 @@ Partial Class ManagerTaxInfoDetail
         Me.txt_StateIncomeTax.TabIndex = 52
         Me.txt_StateIncomeTax.Text = "State Income Tax"
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox5.Image = Global.Payroll.My.Resources.Resources.Ribbon_TaxSummary
+        Me.PictureBox5.Location = New System.Drawing.Point(662, 57)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(261, 53)
+        Me.PictureBox5.TabIndex = 40
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox4.Image = Global.Payroll.My.Resources.Resources.Ribbon_PaySummary
+        Me.PictureBox4.Location = New System.Drawing.Point(345, 57)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(261, 53)
+        Me.PictureBox4.TabIndex = 39
+        Me.PictureBox4.TabStop = False
+        '
+        'img_Ribbon
+        '
+        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.img_Ribbon.Image = Global.Payroll.My.Resources.Resources.Ribbon_EmployeeInfo
+        Me.img_Ribbon.Location = New System.Drawing.Point(29, 57)
+        Me.img_Ribbon.Name = "img_Ribbon"
+        Me.img_Ribbon.Size = New System.Drawing.Size(261, 53)
+        Me.img_Ribbon.TabIndex = 38
+        Me.img_Ribbon.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Payroll.My.Resources.Resources.Card
+        Me.PictureBox3.Location = New System.Drawing.Point(33, 116)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(253, 387)
+        Me.PictureBox3.TabIndex = 35
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Payroll.My.Resources.Resources.Card
+        Me.PictureBox2.Location = New System.Drawing.Point(350, 116)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(253, 387)
+        Me.PictureBox2.TabIndex = 34
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Payroll.My.Resources.Resources.Card
+        Me.PictureBox1.Location = New System.Drawing.Point(667, 116)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(253, 387)
+        Me.PictureBox1.TabIndex = 33
+        Me.PictureBox1.TabStop = False
+        '
         'ManagerTaxInfoDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -317,12 +316,12 @@ Partial Class ManagerTaxInfoDetail
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Name = "ManagerTaxInfoDetail"
         Me.Text = "Pay Tread - Admin"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -22,14 +22,13 @@ Partial Class EmployeeKeypadEntry
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EmployeeKeypadEntry))
         Me.btn_Back = New System.Windows.Forms.Button()
-        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         Me.btn_Submit = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.img_Avatar = New System.Windows.Forms.PictureBox()
-        CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         CType(Me.img_Avatar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn_Back
@@ -41,16 +40,6 @@ Partial Class EmployeeKeypadEntry
         Me.btn_Back.TabIndex = 12
         Me.btn_Back.Text = "Back"
         Me.btn_Back.UseVisualStyleBackColor = True
-        '
-        'img_Ribbon
-        '
-        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.img_Ribbon.Image = CType(resources.GetObject("img_Ribbon.Image"), System.Drawing.Image)
-        Me.img_Ribbon.Location = New System.Drawing.Point(299, 121)
-        Me.img_Ribbon.Name = "img_Ribbon"
-        Me.img_Ribbon.Size = New System.Drawing.Size(354, 52)
-        Me.img_Ribbon.TabIndex = 11
-        Me.img_Ribbon.TabStop = False
         '
         'btn_Submit
         '
@@ -74,12 +63,22 @@ Partial Class EmployeeKeypadEntry
         '
         'img_Avatar
         '
-        Me.img_Avatar.Image = CType(resources.GetObject("img_Avatar.Image"), System.Drawing.Image)
+        Me.img_Avatar.Image = Global.Payroll.My.Resources.Resources.Icon_Avatar
         Me.img_Avatar.Location = New System.Drawing.Point(290, 199)
         Me.img_Avatar.Name = "img_Avatar"
         Me.img_Avatar.Size = New System.Drawing.Size(53, 50)
         Me.img_Avatar.TabIndex = 14
         Me.img_Avatar.TabStop = False
+        '
+        'img_Ribbon
+        '
+        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.img_Ribbon.Image = Global.Payroll.My.Resources.Resources.Ribbon_EmployeeKeypad
+        Me.img_Ribbon.Location = New System.Drawing.Point(299, 121)
+        Me.img_Ribbon.Name = "img_Ribbon"
+        Me.img_Ribbon.Size = New System.Drawing.Size(354, 52)
+        Me.img_Ribbon.TabIndex = 11
+        Me.img_Ribbon.TabStop = False
         '
         'EmployeeKeypadEntry
         '
@@ -93,8 +92,8 @@ Partial Class EmployeeKeypadEntry
         Me.Controls.Add(Me.btn_Submit)
         Me.Name = "EmployeeKeypadEntry"
         Me.Text = "Pay Tread"
-        CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.img_Avatar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

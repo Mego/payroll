@@ -22,23 +22,12 @@ Partial Class EmployeeCardSwipe
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EmployeeCardSwipe))
-        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.btn_CardSwipe = New System.Windows.Forms.Button()
         Me.btn_Back = New System.Windows.Forms.Button()
+        Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'img_Ribbon
-        '
-        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.img_Ribbon.Image = CType(resources.GetObject("img_Ribbon.Image"), System.Drawing.Image)
-        Me.img_Ribbon.Location = New System.Drawing.Point(288, 115)
-        Me.img_Ribbon.Name = "img_Ribbon"
-        Me.img_Ribbon.Size = New System.Drawing.Size(372, 57)
-        Me.img_Ribbon.TabIndex = 7
-        Me.img_Ribbon.TabStop = False
         '
         'Button3
         '
@@ -70,6 +59,17 @@ Partial Class EmployeeCardSwipe
         Me.btn_Back.TabIndex = 8
         Me.btn_Back.Text = "Back"
         Me.btn_Back.UseVisualStyleBackColor = True
+        '
+        'img_Ribbon
+        '
+        Me.img_Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.img_Ribbon.ErrorImage = Global.Payroll.My.Resources.Resources.Ribbon_EmployeeClockIn
+        Me.img_Ribbon.Image = Global.Payroll.My.Resources.Resources.Ribbon_SwipeCard
+        Me.img_Ribbon.Location = New System.Drawing.Point(288, 115)
+        Me.img_Ribbon.Name = "img_Ribbon"
+        Me.img_Ribbon.Size = New System.Drawing.Size(372, 57)
+        Me.img_Ribbon.TabIndex = 7
+        Me.img_Ribbon.TabStop = False
         '
         'EmployeeCardSwipe
         '
