@@ -83,6 +83,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Ribbon_ChooseRole() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Ribbon_ChooseRole", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Ribbon_EmployeeClockIn() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Ribbon_EmployeeClockIn", resourceCulture)
@@ -106,6 +116,16 @@ Namespace My.Resources
         Friend ReadOnly Property Ribbon_EmployeeKeypad() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Ribbon_EmployeeKeypad", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Ribbon_ManagerAccess() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Ribbon_ManagerAccess", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

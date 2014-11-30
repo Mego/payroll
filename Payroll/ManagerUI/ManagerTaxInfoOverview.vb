@@ -21,6 +21,23 @@
         Dim taxDetail As ManagerTaxInfoDetail
         taxDetail = New ManagerTaxInfoDetail
 
+        With taxDetail
+            taxDetail.EmployeeName = "Johnny Appleseed"
+            taxDetail.Address = "1234 Wallaby Way"
+            taxDetail.SocialSecurityNum = "123456789"
+            taxDetail.FederalID = "6789234234"
+            taxDetail.FederalIncomeTax = "5000"
+            taxDetail.WithheldPay = "4500"
+            taxDetail.SocialSecurityTax = "800"
+            taxDetail.OverTime = "37"
+            taxDetail.HoursWorked = "700"
+            taxDetail.Medicare = "500"
+            taxDetail.StateIncomeTax = "0"
+            taxDetail.GrossPay = "32,000"
+        End With
+
+        taxDetail.initLabels()
+
         taxDetail.Location = Me.Location
         Me.Hide()
         taxDetail.ShowDialog()

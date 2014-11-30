@@ -117,10 +117,22 @@
       <DependentUpon>InsertEmployee.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="InitialForm.Designer.vb">
+      <DependentUpon>InitialForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InitialForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ManagerUI\ManagerEmployeePicker.Designer.vb">
       <DependentUpon>ManagerEmployeePicker.vb</DependentUpon>
     </Compile>
     <Compile Include="ManagerUI\ManagerEmployeePicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerLogIn.Designer.vb">
+      <DependentUpon>ManagerLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUI\ManagerLogIn.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManagerUI\ManagerMonthlyOverview.Designer.vb">
@@ -195,8 +207,14 @@
     <EmbeddedResource Include="InsertEmployee.resx">
       <DependentUpon>InsertEmployee.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InitialForm.resx">
+      <DependentUpon>InitialForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerUI\ManagerEmployeePicker.resx">
       <DependentUpon>ManagerEmployeePicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUI\ManagerLogIn.resx">
+      <DependentUpon>ManagerLogIn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUI\ManagerMainMenu.resx">
       <DependentUpon>ManagerMainMenu.vb</DependentUpon>
@@ -269,6 +287,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ribbon_TaxSummary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ribbon_ManagerAccess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ribbon_ChooseRole.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -27,6 +27,8 @@ Partial Class ManagerMainMenu
         Me.btn_Scheduler = New System.Windows.Forms.Button()
         Me.btn_TaxInformation = New System.Windows.Forms.Button()
         Me.img_Ribbon = New System.Windows.Forms.PictureBox()
+        Me.btn_AddEmployee = New System.Windows.Forms.Button()
+        Me.btn_LogOut = New System.Windows.Forms.Button()
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -34,9 +36,9 @@ Partial Class ManagerMainMenu
         '
         Me.btn_PrintChecks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_PrintChecks.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_PrintChecks.Location = New System.Drawing.Point(504, 280)
+        Me.btn_PrintChecks.Location = New System.Drawing.Point(404, 279)
         Me.btn_PrintChecks.Name = "btn_PrintChecks"
-        Me.btn_PrintChecks.Size = New System.Drawing.Size(167, 86)
+        Me.btn_PrintChecks.Size = New System.Drawing.Size(144, 86)
         Me.btn_PrintChecks.TabIndex = 6
         Me.btn_PrintChecks.Text = "Print Checks"
         Me.btn_PrintChecks.UseVisualStyleBackColor = True
@@ -44,9 +46,9 @@ Partial Class ManagerMainMenu
         'btn_MonthlyOverview
         '
         Me.btn_MonthlyOverview.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_MonthlyOverview.Location = New System.Drawing.Point(282, 280)
+        Me.btn_MonthlyOverview.Location = New System.Drawing.Point(219, 279)
         Me.btn_MonthlyOverview.Name = "btn_MonthlyOverview"
-        Me.btn_MonthlyOverview.Size = New System.Drawing.Size(167, 86)
+        Me.btn_MonthlyOverview.Size = New System.Drawing.Size(144, 86)
         Me.btn_MonthlyOverview.TabIndex = 5
         Me.btn_MonthlyOverview.Text = "Monthly Overview"
         Me.btn_MonthlyOverview.UseVisualStyleBackColor = True
@@ -54,9 +56,9 @@ Partial Class ManagerMainMenu
         'btn_Scheduler
         '
         Me.btn_Scheduler.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Scheduler.Location = New System.Drawing.Point(60, 280)
+        Me.btn_Scheduler.Location = New System.Drawing.Point(34, 279)
         Me.btn_Scheduler.Name = "btn_Scheduler"
-        Me.btn_Scheduler.Size = New System.Drawing.Size(167, 86)
+        Me.btn_Scheduler.Size = New System.Drawing.Size(144, 86)
         Me.btn_Scheduler.TabIndex = 4
         Me.btn_Scheduler.Text = "Scheduler"
         Me.btn_Scheduler.UseVisualStyleBackColor = True
@@ -65,9 +67,9 @@ Partial Class ManagerMainMenu
         '
         Me.btn_TaxInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_TaxInformation.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_TaxInformation.Location = New System.Drawing.Point(726, 280)
+        Me.btn_TaxInformation.Location = New System.Drawing.Point(589, 279)
         Me.btn_TaxInformation.Name = "btn_TaxInformation"
-        Me.btn_TaxInformation.Size = New System.Drawing.Size(167, 86)
+        Me.btn_TaxInformation.Size = New System.Drawing.Size(144, 86)
         Me.btn_TaxInformation.TabIndex = 8
         Me.btn_TaxInformation.Text = "Tax Information"
         Me.btn_TaxInformation.UseVisualStyleBackColor = True
@@ -82,11 +84,33 @@ Partial Class ManagerMainMenu
         Me.img_Ribbon.TabIndex = 7
         Me.img_Ribbon.TabStop = False
         '
+        'btn_AddEmployee
+        '
+        Me.btn_AddEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_AddEmployee.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_AddEmployee.Location = New System.Drawing.Point(774, 279)
+        Me.btn_AddEmployee.Name = "btn_AddEmployee"
+        Me.btn_AddEmployee.Size = New System.Drawing.Size(144, 86)
+        Me.btn_AddEmployee.TabIndex = 9
+        Me.btn_AddEmployee.Text = "Add Employee"
+        Me.btn_AddEmployee.UseVisualStyleBackColor = True
+        '
+        'btn_LogOut
+        '
+        Me.btn_LogOut.Location = New System.Drawing.Point(12, 12)
+        Me.btn_LogOut.Name = "btn_LogOut"
+        Me.btn_LogOut.Size = New System.Drawing.Size(75, 23)
+        Me.btn_LogOut.TabIndex = 10
+        Me.btn_LogOut.Text = "Log Out"
+        Me.btn_LogOut.UseVisualStyleBackColor = True
+        '
         'ManagerMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(952, 619)
+        Me.Controls.Add(Me.btn_LogOut)
+        Me.Controls.Add(Me.btn_AddEmployee)
         Me.Controls.Add(Me.btn_TaxInformation)
         Me.Controls.Add(Me.img_Ribbon)
         Me.Controls.Add(Me.btn_PrintChecks)
@@ -104,4 +128,6 @@ Partial Class ManagerMainMenu
     Friend WithEvents btn_MonthlyOverview As System.Windows.Forms.Button
     Friend WithEvents btn_Scheduler As System.Windows.Forms.Button
     Friend WithEvents btn_TaxInformation As System.Windows.Forms.Button
+    Friend WithEvents btn_AddEmployee As System.Windows.Forms.Button
+    Friend WithEvents btn_LogOut As System.Windows.Forms.Button
 End Class

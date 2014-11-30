@@ -23,7 +23,4 @@
         MsgBox("Employee Inserted")
     End Sub
 
-    Private Sub InsertEmployee_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ManagerMainMenu.Show()
-    End Sub
 End Class

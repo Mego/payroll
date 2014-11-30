@@ -28,10 +28,21 @@
         showForm(CType(taxInformation, Form))
     End Sub
 
+    Private Sub btn_AddEmployee_Click(sender As Object, e As EventArgs) Handles btn_AddEmployee.Click
+        Dim addEmployee As InsertEmployee
+        addEmployee = New InsertEmployee
+        addEmployee.ShowDialog()
+    End Sub
+
+    Private Sub btn_LogOut_Click(sender As Object, e As EventArgs) Handles btn_LogOut.Click
+        Dim managerLogIn As ManagerLogIn
+        managerLogIn = New ManagerLogIn
+        showForm(CType(managerLogIn, Form))
+    End Sub
+
     Sub showForm(ByRef form As Form)
         form.Location = Me.Location
         form.Show()
         Me.Close()
     End Sub
-
 End Class

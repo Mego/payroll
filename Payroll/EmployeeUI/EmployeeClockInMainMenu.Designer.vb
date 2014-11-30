@@ -26,6 +26,7 @@ Partial Class EmployeeClockInMainMenu
         Me.btn_ClockOut = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.img_Ribbon = New System.Windows.Forms.PictureBox()
+        Me.btn_Back = New System.Windows.Forms.Button()
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -70,16 +71,27 @@ Partial Class EmployeeClockInMainMenu
         Me.img_Ribbon.TabIndex = 3
         Me.img_Ribbon.TabStop = False
         '
+        'btn_Back
+        '
+        Me.btn_Back.Location = New System.Drawing.Point(12, 12)
+        Me.btn_Back.Name = "btn_Back"
+        Me.btn_Back.Size = New System.Drawing.Size(75, 23)
+        Me.btn_Back.TabIndex = 4
+        Me.btn_Back.Text = "Back"
+        Me.btn_Back.UseVisualStyleBackColor = True
+        '
         'EmployeeClockInMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(952, 619)
+        Me.Controls.Add(Me.btn_Back)
         Me.Controls.Add(Me.img_Ribbon)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.btn_ClockOut)
         Me.Controls.Add(Me.btn_ClockIn)
         Me.Name = "EmployeeClockInMainMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Pay Tread"
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -89,4 +101,5 @@ Partial Class EmployeeClockInMainMenu
     Friend WithEvents btn_ClockOut As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents img_Ribbon As System.Windows.Forms.PictureBox
+    Friend WithEvents btn_Back As System.Windows.Forms.Button
 End Class
