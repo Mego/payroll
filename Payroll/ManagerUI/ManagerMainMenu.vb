@@ -10,18 +10,21 @@
     Private Sub btn_MonthlyOverview_Click(sender As Object, e As EventArgs) Handles btn_MonthlyOverview.Click
         Dim monthlyOverview As ManagerMonthlyOverview
         monthlyOverview = New ManagerMonthlyOverview
+        monthlyOverview.initTable()
         showForm(CType(monthlyOverview, Form))
     End Sub
 
     Private Sub btn_PrintChecks_Click(sender As Object, e As EventArgs) Handles btn_PrintChecks.Click
         Dim checkPrint As ManagerPrintChecks
         checkPrint = New ManagerPrintChecks
+        checkPrint.initTable()
         showForm(CType(checkPrint, Form))
     End Sub
 
     Private Sub btn_TaxInformation_Click(sender As Object, e As EventArgs) Handles btn_TaxInformation.Click
         Dim taxInformation As ManagerTaxInfoOverview
         taxInformation = New ManagerTaxInfoOverview
+        taxInformation.initTable()
         showForm(CType(taxInformation, Form))
     End Sub
 

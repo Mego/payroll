@@ -17,4 +17,9 @@
         Me.Close()
     End Sub
 
+    Private Sub ManagerEmployeePicker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Dim emp As Employee = New Employee
+        'emp.ExecuteQuery("SELECT * FROM SE_EMPLOYEE")
+    End Sub
+
 End Class

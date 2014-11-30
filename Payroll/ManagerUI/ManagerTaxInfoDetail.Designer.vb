@@ -315,6 +315,7 @@ Partial Class ManagerTaxInfoDetail
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Name = "ManagerTaxInfoDetail"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Pay Tread - Admin"
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
