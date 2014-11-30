@@ -83,7 +83,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("76.233.242.6")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("144.96.4.129")>  _
         Public ReadOnly Property DB_HOST() As String
             Get
                 Return CType(Me("DB_HOST"),String)
