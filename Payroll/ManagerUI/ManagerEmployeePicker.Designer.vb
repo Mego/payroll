@@ -30,7 +30,6 @@ Partial Class ManagerEmployeePicker
         'employeeSelect
         '
         Me.employeeSelect.FormattingEnabled = True
-        Me.employeeSelect.Items.AddRange(New Object() {"Al Pacino", "James Cameron", "Martin Scorcese", "Ridley Scott"})
         Me.employeeSelect.Location = New System.Drawing.Point(12, 58)
         Me.employeeSelect.Name = "employeeSelect"
         Me.employeeSelect.Size = New System.Drawing.Size(300, 199)

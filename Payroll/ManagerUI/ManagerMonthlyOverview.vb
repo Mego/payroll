@@ -1,4 +1,6 @@
-﻿Public Class ManagerMonthlyOverview
+﻿Imports System.IO
+
+Public Class ManagerMonthlyOverview
 
     Private Sub btn_MainMenu_Click(sender As Object, e As EventArgs) Handles btn_MainMenu.Click
         Dim mainMenu As ManagerMainMenu
@@ -13,7 +15,40 @@
     End Sub
 
     Sub initTable()
+        Dim spath As String = Directory.GetCurrentDirectory
+        Dim employees As ArrayList
+        employees = New ArrayList
+
+        Dim fileReader As StreamReader
+        fileReader = My.Computer.FileSystem.OpenTextFileReader(Path.Combine(spath, "EmployeeData\Data.dat"))
+        Dim textLine As String
+        While Not fileReader.EndOfStream()
+            textLine = fileReader.ReadLine()
+            employees.Add(textLine)
+        End While
+
+        fileReader.Close()
+
+        Dim names As New ArrayList
+        Dim splitString As String()
+        For i As Integer = 0 To employees.Count - 1
+            'MsgBox(employees(i))
+            splitString = Split(CStr(employees(i)), ",")
+            names.Add(splitString(1))
+            '(names(i))
+        Next
+
+        Dim firstNames As New ArrayList
+        For i As Integer = 0 To employees.Count - 1
+            splitString = Split(CStr(names(i)), " ")
+            firstNames.Add(splitString(0))
+            '(names(i))
+        Next
+
         Dim rowHeaders = New String() {"EMPLOYEE", "Hourly Pay", "Hours Worked", "Overtime", "Total Pay"}
+
+        tableView.ColumnCount = rowHeaders.Count
+
         Dim ctrl As Button
         For i As Integer = 0 To rowHeaders.Count - 1
             ctrl = New Button
@@ -24,13 +59,17 @@
             tableView.Controls.Add(ctrl, i, 0)
         Next
 
-        Dim columnHeaders = New String() {"Lucy", "William", "Sam", "Ryan", "John", "Scott", "Sara", "Andrew"}
-        For i As Integer = 1 To columnHeaders.Count - 1
+        'Dim columnHeaders = New String() {"Lucy", "William", "Sam", "Ryan", "John", "Scott", "Sara", "Andrew"}
+
+        tableView.RowCount = names.Count + 1
+
+        For i As Integer = 1 To names.Count
             ctrl = New Button
             ctrl.Dock = DockStyle.Fill
             ctrl.FlatStyle = FlatStyle.Flat
             ctrl.BackColor = Color.LightGray
-            ctrl.Text = columnHeaders(i - 1)
+            ctrl.Text = CStr(names(i - 1))
+            'MsgBox(names(i - 1))
             tableView.Controls.Add(ctrl, 0, i)
         Next
 

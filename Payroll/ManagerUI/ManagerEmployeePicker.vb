@@ -1,5 +1,6 @@
 ﻿Public Class ManagerEmployeePicker
     Public selectedEmployees As ArrayList
+    Public employeesToSelectFrom As ArrayList
 
     Private Sub employeeSelect_SelectedIndexChanged(sender As Object, e As EventArgs) Handles employeeSelect.SelectedIndexChanged
         Dim checkBox As CheckedListBox = CType(sender, CheckedListBox)
@@ -24,8 +25,20 @@
     End Sub
 
     Private Sub ManagerEmployeePicker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Dim emp As Employee = New Employee
-        'emp.ExecuteQuery("SELECT * FROM SE_EMPLOYEE")
+        'Dim firstNames As New ArrayList
+        'Dim splitString As String()
+
+        'For i As Integer = 0 To employeesToSelectFrom.Count - 1
+        'splitString = Split(CStr(employeesToSelectFrom(i)), " ")
+        'firstNames.Add(splitString(0))
+        ' MsgBox(firstNames(i))
+        ' Next
+
+        For i As Integer = 0 To employeesToSelectFrom.Count - 1
+            employeeSelect.Items.Add(employeesToSelectFrom(i))
+            ' MsgBox(firstNames(i))
+        Next
+
     End Sub
 
 End Class

@@ -1,4 +1,8 @@
-﻿Public Class ManagerScheduler
+﻿Imports System.IO
+
+Public Class ManagerScheduler
+
+    Dim employees As ArrayList
 
     Private Sub btn_MainMenu_Click(sender As Object, e As EventArgs) Handles btn_MainMenu.Click
         Dim mainMenu As ManagerMainMenu
@@ -13,10 +17,32 @@
     End Sub
 
     Private Sub addEmployeeToTimeSlot(sender As Object, e As EventArgs)
+        Dim spath As String = Directory.GetCurrentDirectory
+        employees = New ArrayList
+
+        Dim fileReader As StreamReader
+        fileReader = My.Computer.FileSystem.OpenTextFileReader(Path.Combine(spath, "EmployeeData\Data.dat"))
+        Dim textLine As String
+        While Not fileReader.EndOfStream()
+            textLine = fileReader.ReadLine()
+            employees.Add(textLine)
+        End While
+
+        fileReader.Close()
+
+        Dim names As New ArrayList
+        Dim splitString As String()
+        For i As Integer = 0 To employees.Count - 1
+            splitString = Split(CStr(employees(i)), ",")
+            names.Add(splitString(1))
+            '(names(i))
+        Next
+
         Dim clickedCell As Button = CType(sender, Button)
 
         Dim employeePicker As ManagerEmployeePicker
         employeePicker = New ManagerEmployeePicker
+        employeePicker.employeesToSelectFrom = names
         employeePicker.ShowDialog()
         Dim selectedEmployees As ArrayList = employeePicker.selectedEmployees
 

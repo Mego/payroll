@@ -18,6 +18,7 @@ Public Class InsertEmployee
             .Add("Sex", If(radMale.Checked, "'M'", "'F'"))
         End With
 
+        ' CHANGE BACK
         Using oEmployee As New Employee
             oEmployee.Insert(dctVals)
         End Using
@@ -40,8 +41,9 @@ Public Class InsertEmployee
 
         fileReader.Close()
 
+        count1 = count1 + 1
         Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), True)
-        newEmployee = String.Concat(txtFname.Text, " ", txtLname.Text, ",", CStr(5), CStr(5), CStr(5), CStr(5), CStr(5), ",", CStr(0))
+        newEmployee = String.Concat(CStr(count1), CStr(count1), CStr(count1), CStr(count1), CStr(count1), ",", txtFname.Text, " ", txtLname.Text, ",", CStr(0))
         fs.WriteLine(newEmployee)
         fs.Close()
 
