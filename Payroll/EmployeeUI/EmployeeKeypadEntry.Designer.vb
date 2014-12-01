@@ -91,6 +91,7 @@ Partial Class EmployeeKeypadEntry
         Me.Controls.Add(Me.img_Ribbon)
         Me.Controls.Add(Me.btn_Submit)
         Me.Name = "EmployeeKeypadEntry"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Pay Tread"
         CType(Me.img_Avatar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()

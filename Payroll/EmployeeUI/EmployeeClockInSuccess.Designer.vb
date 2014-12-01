@@ -56,6 +56,7 @@ Partial Class EmployeeClockInSuccess
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_ClockOutMessage)
         Me.Name = "EmployeeClockInSuccess"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Pay Tread"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -24,7 +24,7 @@ Partial Class EmployeeClockInMainMenu
     Private Sub InitializeComponent()
         Me.btn_ClockIn = New System.Windows.Forms.Button()
         Me.btn_ClockOut = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btn_KeypadEntry = New System.Windows.Forms.Button()
         Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         Me.btn_Back = New System.Windows.Forms.Button()
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,16 +50,16 @@ Partial Class EmployeeClockInMainMenu
         Me.btn_ClockOut.Text = "Clock Out"
         Me.btn_ClockOut.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_KeypadEntry
         '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(393, 376)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(167, 86)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Keypad Entry"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_KeypadEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_KeypadEntry.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_KeypadEntry.Location = New System.Drawing.Point(393, 376)
+        Me.btn_KeypadEntry.Name = "btn_KeypadEntry"
+        Me.btn_KeypadEntry.Size = New System.Drawing.Size(167, 86)
+        Me.btn_KeypadEntry.TabIndex = 2
+        Me.btn_KeypadEntry.Text = "Keypad Entry"
+        Me.btn_KeypadEntry.UseVisualStyleBackColor = True
         '
         'img_Ribbon
         '
@@ -87,7 +87,7 @@ Partial Class EmployeeClockInMainMenu
         Me.ClientSize = New System.Drawing.Size(952, 619)
         Me.Controls.Add(Me.btn_Back)
         Me.Controls.Add(Me.img_Ribbon)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btn_KeypadEntry)
         Me.Controls.Add(Me.btn_ClockOut)
         Me.Controls.Add(Me.btn_ClockIn)
         Me.Name = "EmployeeClockInMainMenu"
@@ -99,7 +99,7 @@ Partial Class EmployeeClockInMainMenu
     End Sub
     Friend WithEvents btn_ClockIn As System.Windows.Forms.Button
     Friend WithEvents btn_ClockOut As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btn_KeypadEntry As System.Windows.Forms.Button
     Friend WithEvents img_Ribbon As System.Windows.Forms.PictureBox
     Friend WithEvents btn_Back As System.Windows.Forms.Button
 End Class
