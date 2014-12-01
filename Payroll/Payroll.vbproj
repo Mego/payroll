@@ -197,6 +197,9 @@
     <EmbeddedResource Include="EmployeeUI\EmployeeClockInMainMenu.resx">
       <DependentUpon>EmployeeClockInMainMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeUI\EmployeeClockInSuccess.resx">
+      <DependentUpon>EmployeeClockInSuccess.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeeUI\EmployeeKeypadEntry.resx">
       <DependentUpon>EmployeeKeypadEntry.vb</DependentUpon>
     </EmbeddedResource>
