@@ -79,9 +79,12 @@ Public Class EmployeeKeypadEntry
                     currUserIndex = CInt(i)
                 End If
             Next i
-            clockStatus(currUserIndex, 2) = CStr(1)
 
-            Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), True)
+            ' Changed this to CStr(0) to reflect clockout
+            clockStatus(currUserIndex, 2) = CStr(0)
+
+            ' *** CHANGED THIS FROM TRUE, Fixed duplicating entries
+            Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), False)
             For i = 0 To 9
                 If Not StrComp(clockStatus(i, 0), "") = 0 Then
                     stringToWrite = String.Concat(clockStatus(i, 0), ",", clockStatus(i, 1), ",", clockStatus(i, 2))
