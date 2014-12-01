@@ -36,7 +36,6 @@ Public Class InitialForm
         End If
 
         If (Not File.Exists(Path.Combine(spath, "EmployeeData\Data.dat"))) Then
-            File.Create(Path.Combine(spath, "EmployeeData\Data.dat"))
             ' initializes the file that is created to hold the four default names and their data
             Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), True)
             fs.WriteLine("Al Pacino,11111,0")
@@ -51,13 +50,13 @@ Public Class InitialForm
         Dim i As Integer
         i = 0
 
-        Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser("EmployeeData\Data.csv")
-            MyReader.TextFieldType = FileIO.FieldType.Delimited
-            MyReader.SetDelimiters(";")
-            While Not MyReader.EndOfData
-                currentFile(i) = MyReader.ReadToEnd()
-                i = i + 1
-            End While
-        End Using
+        'Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser("EmployeeData\Data.csv")
+        'MyReader.TextFieldType = FileIO.FieldType.Delimited
+        'MyReader.SetDelimiters(";")
+        'While Not MyReader.EndOfData
+        ' currentFile(i) = MyReader.ReadToEnd()
+        'i = i + 1
+        'End While
+        'End Using
     End Sub
 End Class
