@@ -6,7 +6,7 @@
         ' For now, just load keypad since we don't have a card simulation
         Dim keypadEntry As EmployeeKeypadEntry
         keypadEntry = New EmployeeKeypadEntry
-        ' Easy way of tracking clockout I guess 
+        ' Easy way of tracking clockout I guess Just pass it along
         keypadEntry.ClockOut = Me.ClockOut
         showForm(CType(keypadEntry, Form))
     End Sub
@@ -14,7 +14,7 @@
     Private Sub btn_KeypadEntry_Click(sender As Object, e As EventArgs) Handles btn_KeypadEntry.Click
         Dim keypadEntry As EmployeeKeypadEntry
         keypadEntry = New EmployeeKeypadEntry
-        ' Easy way of tracking clockout I guess 
+        ' Easy way of tracking clockout I guess. Just pass it along
         keypadEntry.ClockOut = Me.ClockOut
         showForm(CType(keypadEntry, Form))
     End Sub

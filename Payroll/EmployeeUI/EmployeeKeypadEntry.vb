@@ -10,12 +10,22 @@
             showForm(CType(clockInSuccess, Form))
         Else
             MsgBox("Clocked Out")
+            ' Now load the main menu for clockin in
+            Dim mainMenu As EmployeeClockInMainMenu
+            mainMenu = New EmployeeClockInMainMenu
+            showForm(CType(mainMenu, Form))
         End If
 
         'Load miss punch like this:
         ' Dim missedPunch As EmployeeMissedPunch
         ' missedPunch = New EmployeeMissedPunch
         ' showForm(CType(missedPunch, Form))
+    End Sub
+
+    Private Sub btn_Back_Click(sender As Object, e As EventArgs) Handles btn_Back.Click
+        Dim mainMenu As EmployeeClockInMainMenu
+        mainMenu = New EmployeeClockInMainMenu
+        showForm(CType(mainMenu, Form))
     End Sub
 
     Sub showForm(ByRef form As Form)
@@ -34,5 +44,4 @@
         End Set
     End Property
 
- 
 End Class
