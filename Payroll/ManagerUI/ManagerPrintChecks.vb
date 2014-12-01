@@ -37,7 +37,7 @@ Public Class ManagerPrintChecks
             '(names(i))
         Next
 
-        Dim rowHeaders = New String() {"Name", "Hours Worked", "Overtime", "Gross Pay", "Net Pay"}
+        Dim rowHeaders = New String() {"Name", "Hourly Wage", "Hours Worked", "Overtime", "Gross Pay", "Net Pay"}
 
         tableView.ColumnCount = rowHeaders.Count
 

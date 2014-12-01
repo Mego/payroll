@@ -48,8 +48,9 @@ Public Class ManagerScheduler
 
         Dim cellText As String
         cellText = ""
+        'MsgBox(selectedEmployees.Item(0))
         For i As Integer = 0 To selectedEmployees.Count - 1
-            ' MsgBox(selectedEmployees.Item(i))
+            'MsgBox(selectedEmployees.Item(i))
             Dim split As String() = selectedEmployees.Item(i).ToString.Split
             cellText = cellText & split(0)
             If i < selectedEmployees.Count - 1 Then

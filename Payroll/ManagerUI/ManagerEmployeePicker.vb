@@ -12,15 +12,11 @@
     End Sub
 
     Private Sub btn_Finished_Click(sender As Object, e As EventArgs) Handles btn_Finished.Click
-        If selectedEmployees.Count = 0 Then
-            selectedEmployees = New ArrayList
-        Else
-            selectedEmployees = New ArrayList
-            For i As Integer = 0 To employeeSelect.CheckedItems.Count - 1
-                'MsgBox(checkBox.CheckedItems.Item(i).ToString)
-                selectedEmployees.Add(employeeSelect.CheckedItems.Item(i).ToString)
-            Next
-        End If
+        selectedEmployees = New ArrayList
+        For i As Integer = 0 To employeeSelect.CheckedItems.Count - 1
+            'MsgBox(employeeSelect.CheckedItems.Item(i).ToString)
+            selectedEmployees.Add(employeeSelect.CheckedItems.Item(i).ToString)
+        Next
         Me.Close()
     End Sub
 
