@@ -44,8 +44,10 @@ Public Class EmployeeKeypadEntry
 
                 Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), False)
                 For i = 0 To 9
-                    stringToWrite = String.Concat(clockStatus(i, 0), ",", clockStatus(i, 1), ",", clockStatus(i, 2))
-                    fs.WriteLine(stringToWrite)
+                    If Not StrComp(clockStatus(i, 0), "") = 0 Then
+                        stringToWrite = String.Concat(clockStatus(i, 0), ",", clockStatus(i, 1), ",", clockStatus(i, 2))
+                        fs.WriteLine(stringToWrite)
+                    End If
                 Next i
                 fs.Close()
                 Dim clockInSuccess As EmployeeClockInSuccess
@@ -56,8 +58,10 @@ Public Class EmployeeKeypadEntry
 
                 Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), False)
                 For i = 0 To 9
-                    stringToWrite = String.Concat(clockStatus(i, 0), ",", clockStatus(i, 1), ",", clockStatus(i, 2))
-                    fs.WriteLine(stringToWrite)
+                    If Not StrComp(clockStatus(i, 0), "") = 0 Then
+                        stringToWrite = String.Concat(clockStatus(i, 0), ",", clockStatus(i, 1), ",", clockStatus(i, 2))
+                        fs.WriteLine(stringToWrite)
+                    End If
                 Next i
                 fs.Close()
                 ' Load missed punch screen
@@ -79,8 +83,10 @@ Public Class EmployeeKeypadEntry
 
             Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), True)
             For i = 0 To 9
-                stringToWrite = String.Concat(clockStatus(i, 0), ",", clockStatus(i, 1), ",", clockStatus(i, 2))
-                fs.WriteLine(stringToWrite)
+                If Not StrComp(clockStatus(i, 0), "") = 0 Then
+                    stringToWrite = String.Concat(clockStatus(i, 0), ",", clockStatus(i, 1), ",", clockStatus(i, 2))
+                    fs.WriteLine(stringToWrite)
+                End If
             Next i
             fs.Close()
 
