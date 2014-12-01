@@ -41,11 +41,10 @@ Public Class InsertEmployee
         fileReader.Close()
 
         Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), True)
-        newEmployee = String.Concat(CStr(5), CStr(5), CStr(5), CStr(5), CStr(5), ",", txtFname.Text, " ", txtLname.Text, ",", CStr(0))
+        newEmployee = String.Concat(txtFname.Text, " ", txtLname.Text, ",", CStr(5), CStr(5), CStr(5), CStr(5), CStr(5), ",", CStr(0))
         fs.WriteLine(newEmployee)
         fs.Close()
 
         MsgBox("Employee Inserted")
     End Sub
-
 End Class

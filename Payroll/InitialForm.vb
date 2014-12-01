@@ -43,7 +43,6 @@ Public Class InitialForm
             fs.WriteLine("33333,Martin Scorcese,0")
             fs.WriteLine("44444,Ridley Scott,0")
             fs.Close()
-
         End If
 
     End Sub
