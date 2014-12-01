@@ -19,6 +19,7 @@
     End Sub
 
     Private Sub btn_ClockOut_Click(sender As Object, e As EventArgs) Handles btn_ClockOut.Click
+        MsgBox("Clocking out")
         Dim cardSwipe As EmployeeCardSwipe
         cardSwipe = New EmployeeCardSwipe
         showForm(CType(cardSwipe, Form))

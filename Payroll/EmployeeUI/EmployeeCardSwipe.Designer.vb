@@ -22,23 +22,23 @@ Partial Class EmployeeCardSwipe
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btn_KeypadEntry = New System.Windows.Forms.Button()
         Me.btn_CardSwipe = New System.Windows.Forms.Button()
         Me.btn_Back = New System.Windows.Forms.Button()
         Me.img_Ribbon = New System.Windows.Forms.PictureBox()
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button3
+        'btn_KeypadEntry
         '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(391, 313)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(167, 86)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Keypad Entry"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_KeypadEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_KeypadEntry.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_KeypadEntry.Location = New System.Drawing.Point(391, 313)
+        Me.btn_KeypadEntry.Name = "btn_KeypadEntry"
+        Me.btn_KeypadEntry.Size = New System.Drawing.Size(167, 86)
+        Me.btn_KeypadEntry.TabIndex = 6
+        Me.btn_KeypadEntry.Text = "Keypad Entry"
+        Me.btn_KeypadEntry.UseVisualStyleBackColor = True
         '
         'btn_CardSwipe
         '
@@ -78,16 +78,17 @@ Partial Class EmployeeCardSwipe
         Me.ClientSize = New System.Drawing.Size(952, 619)
         Me.Controls.Add(Me.btn_Back)
         Me.Controls.Add(Me.img_Ribbon)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btn_KeypadEntry)
         Me.Controls.Add(Me.btn_CardSwipe)
         Me.Name = "EmployeeCardSwipe"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Pay Tread"
         CType(Me.img_Ribbon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents img_Ribbon As System.Windows.Forms.PictureBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btn_KeypadEntry As System.Windows.Forms.Button
     Friend WithEvents btn_CardSwipe As System.Windows.Forms.Button
     Friend WithEvents btn_Back As System.Windows.Forms.Button
 End Class
