@@ -62,7 +62,6 @@ Public Class ManagerMonthlyOverview
         'Dim columnHeaders = New String() {"Lucy", "William", "Sam", "Ryan", "John", "Scott", "Sara", "Andrew"}
 
         tableView.RowCount = names.Count + 1
-
         For i As Integer = 1 To names.Count
             ctrl = New Button
             ctrl.Dock = DockStyle.Fill
@@ -73,12 +72,37 @@ Public Class ManagerMonthlyOverview
             tableView.Controls.Add(ctrl, 0, i)
         Next
 
+        'init table contents
         For rowNo As Integer = 1 To tableView.RowCount - 1
             For columnNo As Integer = 1 To tableView.ColumnCount - 1
                 ctrl = New Button
+                ctrl.Tag = rowNo
                 ctrl.Dock = DockStyle.Fill
                 ' AddHandler ctrl.Click, AddressOf addEmployeeToTimeSlot
                 ctrl.FlatStyle = FlatStyle.Flat
+
+                If columnNo = 1 Then
+                    ' Wage
+                    ctrl.Text = "8"
+                ElseIf columnNo = 2 Then
+                    ' Hours Worked
+                    Dim randomValue As Integer = CInt(Math.Floor((75 - 30 + 1) * Rnd())) + 30
+                    ctrl.Text = CStr(randomValue)
+                ElseIf columnNo = 3 Then
+                    ' Overtime
+                    Dim randomValue As Integer = CInt(Math.Floor((10 - 0 + 1) * Rnd())) + 0
+                    ctrl.Text = CStr(randomValue)
+                ElseIf columnNo = 4 Then
+                    ' Pay
+                    Dim wage As Button = CType(tableView.GetControlFromPosition(1, CInt(ctrl.Tag)), Button)
+                    Dim hoursWorked As Button = CType(tableView.GetControlFromPosition(2, CInt(ctrl.Tag)), Button)
+                    Dim overTime As Button = CType(tableView.GetControlFromPosition(3, CInt(ctrl.Tag)), Button)
+
+                    Dim totalPay As Double = CInt(wage.Text) * CInt(hoursWorked.Text) + (CInt(wage.Text) * 1.5) * CInt(overTime.Text)
+                    ctrl.Text = CStr(totalPay)
+
+                End If
+
                 tableView.Controls.Add(ctrl, columnNo, rowNo)
             Next
         Next
