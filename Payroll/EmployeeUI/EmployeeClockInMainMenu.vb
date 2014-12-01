@@ -9,6 +9,8 @@
     Private Sub btn_ClockIn_Click(sender As Object, e As EventArgs) Handles btn_ClockIn.Click
         Dim cardSwipe As EmployeeCardSwipe
         cardSwipe = New EmployeeCardSwipe
+        ' Set form to clock out instead of clock in
+        cardSwipe.ClockOut = False
         showForm(CType(cardSwipe, Form))
     End Sub
 
@@ -22,6 +24,8 @@
         MsgBox("Clocking out")
         Dim cardSwipe As EmployeeCardSwipe
         cardSwipe = New EmployeeCardSwipe
+        ' Set form to clock out instead of clock in
+        cardSwipe.ClockOut = True
         showForm(CType(cardSwipe, Form))
     End Sub
 
