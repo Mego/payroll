@@ -31,16 +31,17 @@ Public Class InitialForm
         Dim paramArray2(2) As String
         paramArray2(1) = spath
         paramArray2(2) = "EmployeeData\Data.csv"
-        If (Not Directory.Exists(Path.Combine(paramArray1))) Then
-            Directory.CreateDirectory(Path.Combine(paramArray1))
-            If (Not File.Exists(Path.Combine(paramArray2))) Then
-                File.Create(Path.Combine(paramArray2))
-                ' initializes the file that is created to hold the four default names and their data
-                My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Al Pacino,11111,0;", True)
-                My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "James Cameron,22222,0;", True)
-                My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Martin Scorcese,33333,0;", True)
-                My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Ridley Scott,44444,0;", True)
-            End If
+        If (Not Directory.Exists(Path.Combine(spath, "EmployeeData"))) Then
+            Directory.CreateDirectory(Path.Combine(spath, "EmployeeData"))
+        End If
+
+        If (Not File.Exists(Path.Combine(spath, "EmployeeData\Data.csv"))) Then
+            File.Create(Path.Combine(spath, "EmployeeData\Data.csv"))
+            ' initializes the file that is created to hold the four default names and their data
+            My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Al Pacino,11111,0;", True)
+            My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "James Cameron,22222,0;", True)
+            My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Martin Scorcese,33333,0;", True)
+            My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Ridley Scott,44444,0;", True)
         End If
 
         Dim currentFile(10) As String
