@@ -30,18 +30,21 @@ Public Class InitialForm
         paramArray1(2) = "EmployeeData"
         Dim paramArray2(2) As String
         paramArray2(1) = spath
-        paramArray2(2) = "EmployeeData\Data.csv"
+        paramArray2(2) = "EmployeeData\Data.dat"
         If (Not Directory.Exists(Path.Combine(spath, "EmployeeData"))) Then
             Directory.CreateDirectory(Path.Combine(spath, "EmployeeData"))
         End If
 
-        If (Not File.Exists(Path.Combine(spath, "EmployeeData\Data.csv"))) Then
-            File.Create(Path.Combine(spath, "EmployeeData\Data.csv"))
+        If (Not File.Exists(Path.Combine(spath, "EmployeeData\Data.dat"))) Then
+            File.Create(Path.Combine(spath, "EmployeeData\Data.dat"))
             ' initializes the file that is created to hold the four default names and their data
-            My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Al Pacino,11111,0;", True)
-            My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "James Cameron,22222,0;", True)
-            My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Martin Scorcese,33333,0;", True)
-            My.Computer.FileSystem.WriteAllText("EmployeeData\Data.csv", "Ridley Scott,44444,0;", True)
+            Dim fs As New System.IO.StreamWriter(Path.Combine(spath, "EmployeeData\Data.dat"), True)
+            fs.WriteLine("Al Pacino,11111,0")
+            fs.WriteLine("James Cameron,22222,0")
+            fs.WriteLine("Martin Scorcese,33333,0")
+            fs.WriteLine("Ridley Scott,44444,0")
+            fs.Close()
+
         End If
 
         Dim currentFile(10) As String
